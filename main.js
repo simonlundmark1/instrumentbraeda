@@ -50,7 +50,7 @@ polisenEvents();
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //Väder
-const weatherKey = "3cd90e7fb04a48ebb79111306241701";
+const weatherKey = 'DIN_API_NYCKEL';
 
 async function getWeather(weatherUrl) {
   try {
@@ -157,7 +157,7 @@ setInterval(fetchCurrentTimeAndDate, 60000);
 
  //Bakgrundsbild unsplash 
 
-const accessKey = 'ptET6nkIG6r7lkSBO9ZtDDoY1Rp3g5O8CSoz49FvaBk'; 
+const accessKey = 'DIN_API_NYCKEL'; 
 const interval = 120000;
 
 async function fetchRandomImage() {
