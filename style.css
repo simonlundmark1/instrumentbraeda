@@ -51,6 +51,9 @@ table {
 
 /* CSS RESET ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
+input {
+    border: none;
+}
 
 button {
     background-color: transparent;
@@ -294,20 +297,67 @@ textarea#notes {
     height: 30vh;
   }
   
+  .grid-item2 {
+  padding: 10px}
+
+  .grid-item2 h2{
+    margin-top: -0.6rem;
+    }
+
+.idag {
+    margin-top: -10px;
+}
+.grid-item2 h4{
+    padding: 10px;
+        font-weight: 200;
+    max-width: 10rem;
+    margin: auto;
+    
+}
+
+.weather-headline {
+    margin-bottom: 10px;
+}
+
+.weather-content, .weather-content2,.weather-content3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #D6DBD5;
+    border-radius: 10px;
+}
+
+.weather-content, .weather-content2,.weather-content3  img {
+}
+
+.weather-content, .weather-content2,.weather-content3  p {
+    margin: 0;
+    text-align: left;
+}
+
+.currentCondition, .tomorrowCondition, .ToOverMorrowCondition {
+    text-align: right;
+    font-weight: 400;
+}
+/* 
 .weather-today, .weather-tomorrow, .weather-toovermorrow {
 margin-left: 0px;
  }
 
 .weather-today, .weather-tomorrow, .weather-toovermorrow  p{
+    display: flex;
+    justify-content: end;
+    align-items: end;
 margin-top:-0px;
 margin-left: -0px;
-font-size: 16px;
+font-size: 12px;
   }          
 
 #icon, #icon2, #icon3 {
-margin-left: 5.5rem;
+margin-left: 0rem;
+width: 50px;
 }
-
+ */
 .favicon {
     margin-left: 10px;
     margin-right: 10px;
@@ -378,7 +428,7 @@ margin-left: 5.5rem;
     position: absolute;
     border-radius: 15px;
     background-color: rgba(235, 235, 235, 0.95); 
-    width: 20rem;
+    width: 19rem;
     height: 13rem;
     margin: auto auto auto auto;
     z-index: 20;
@@ -445,9 +495,11 @@ margin-left: 5.5rem;
     margin-top: 20px;
 }
 
+#popupUrlInput {
+    margin-top: 1rem;
+}
 
 #popupTitleInput, #popupUrlInput  {
-    margin-top: 1rem;
     height: 2rem;
     border-radius: 5px;
     max-width: 15rem;
@@ -475,3 +527,7 @@ margin-left: 5.5rem;
     z-index: 0;
 }
 
+.popupRubrik {
+    margin-top: -10px;
+    color: #3B363E;
+}

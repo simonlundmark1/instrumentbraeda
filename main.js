@@ -81,13 +81,17 @@ async function getWeather(weatherUrl) {
     icon2.src = tomorrowIconUrl;
     icon3.src = ToOverMorrowIconUrl;
 
-    let weatherToday = document.querySelector(".weather-today");
-    let weatherTomorrow = document.querySelector(".weather-tomorrow");
-    let weatherToovermorrow = document.querySelector(".weather-toovermorrow");
+    let weatherToday = document.querySelector(".weather-content");
+    let weatherTomorrow = document.querySelector(".weather-content2");
+    let weatherToovermorrow = document.querySelector(".weather-content3");
+/*     let weatherTodayTemp = document.querySelector(".temp1");
+    let weatherTomorrowTemp = document.querySelector(".temp2");
+    let weatherToovermorrowTemp = document.querySelector(".temp3"); */
 
-    weatherToday.innerHTML = `${icon.outerHTML} <p>${currentTemp}°C <br>${currentCondition} </p>`;
-    weatherTomorrow.innerHTML = `${icon2.outerHTML} <p>${tomorrowTemp}°C <br> ${tomorrowCondition} </p>`;
-    weatherToovermorrow.innerHTML = `${icon3.outerHTML} <p>${toOverMorrowTemp}°C <br> ${ToOverMorrowCondition} </p>`;
+
+    weatherToday.innerHTML = `${icon.outerHTML} <p>${currentTemp}°C <br> <span class="current-condition">${currentCondition}</span></p>`;
+    weatherTomorrow.innerHTML = `${icon2.outerHTML} <p>${tomorrowTemp}°C <br> <span class="tomorrow-condition">${tomorrowCondition}</span> </p>`;
+    weatherToovermorrow.innerHTML = `${icon3.outerHTML} <p>${toOverMorrowTemp}°C <br> <span class="toovermorrow-condition">${ToOverMorrowCondition}</span> </p>`;
 
   } catch (error) {
     console.error("Weather did not fetch correctly", error);
