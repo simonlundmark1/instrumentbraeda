@@ -31,7 +31,7 @@ Upplevs absolut bäst med Chrome på windows 11.
 
 Kodkvalité
 
-Jag tror att min kod inte håller så värst hög kvalitet utan jag har mest bara provat olika saker tills det har fungerat. Om jag hade haft mer tid och ork att fixa till den hade jag rensat bort ganska mycket överflödig kod och kortat ner den samt gjort den mer överskådlig. Man kan säkert korta ner den jättemycket. Det finns en del ful-CSS och javascript som jag inte fattar hur eller varför dom fungerar men dom fungerar. Utöver det kan jag nog för lite för att reflektera på något vettigt sätt.
+Jag tror att min kod inte håller så värst hög kvalitet utan jag har mest bara provat olika saker tills det har fungerat. Om jag hade haft mer tid och ork att fixa till den hade jag rensat bort ganska mycket överflödig kod och kortat ner den samt gjort den mer överskådlig. Man kan säkert korta ner den jättemycket. Det finns en del ful-CSS och javascript som jag inte fattar hur eller varför dom fungerar men dom fungerar.
 
 FAQ
 
