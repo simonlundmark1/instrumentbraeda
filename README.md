@@ -36,9 +36,11 @@ Jag tror att min kod inte håller så värst hög kvalitet utan jag har mest bar
 FAQ
 
 Q: Är det inte läskigt med brott och sånt?
+
 A: Ja.
 
 Q1: Vem är det som kommer fram när man hovrar över diven?
+
 A: Leif GW Perssons spöke.
 
 ## Contributing
