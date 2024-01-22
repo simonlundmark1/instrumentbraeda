@@ -1,0 +1,477 @@
+/* CSS RESET >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+button {
+    background-color: transparent;
+    border: none;
+}
+/* ^^^Visar buttons likadant på alla webbläsare */
+
+* {
+    padding: 0;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    box-sizing: border-box;
+}
+
+/* Box sizing skit vet ej vad den gör men den ska göra så att allt ser liakadant ut överaltl */
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    transition: background-image 1s ease-in-out;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 55px;
+    color: #D6DBD5;
+}
+
+#klickbar-rubrik {
+    user-select: none; 
+    outline: none; 
+}
+
+#klickbar-rubrik:focus {
+    outline: none;
+}
+
+
+.headline {
+-webkit-user-select: none;
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+border-radius: 15px;
+opacity: 1;
+right: 2px;
+margin: 2rem  auto auto;
+text-align: center;
+}
+
+.grid-container {
+margin: 2rem auto auto auto; 
+max-width: 70rem;
+height: 24rem;
+display: grid;
+flex-direction: row;
+grid-template-columns: repeat(4, 1fr); 
+gap: 30px;
+padding: 10px;
+color: rgb(0, 0, 0);
+}
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4  {
+border-radius: 15px;
+background-color: rgba(235, 235, 235, 0.5); 
+text-align: center;
+backdrop-filter: blur(6px); 
+
+}
+
+.grid-item1 {
+display: flex;
+flex-direction: column;
+padding: 15px; 
+height: 100%; 
+
+}
+
+.grid-item1 h2 {
+margin-top: -1rem;
+}
+
+.addLink {
+    font-size: 14px;
+    margin-top: auto;
+    margin-left: 30px;
+background-color: rgba(235, 235, 235, 0.6);
+border-radius: 8px;
+padding: 5px 0px; 
+color:#ffffff;
+width: 10rem;
+}
+
+#addLinkBtn {
+    border: none; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color:#ffffff;
+
+}
+ 
+.addlinkicon {
+    fill: #ffffff;
+    margin-right: 5px;
+    margin-left: 18px;
+
+}
+
+.links-headline, .weather-headline, .own-headline, .notes-headline {
+-webkit-user-select: none;
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+    padding: 5px;
+    margin-top: -10px;  
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8); ;
+    margin-top: 10px;
+}
+
+.link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 3rem;
+    background-color: rgba(235, 235, 235, 0.6); 
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+
+.link a { /* Gör så att det inte blir tokigt när saker är inuti anchor tagen */
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;
+}
+
+.time {
+display: flex;
+justify-content: center; 
+align-items: center; 
+width: 12rem;
+height: 2rem;
+border-radius: 15px;
+opacity: 0.8;
+right: 2px;
+margin: 5rem auto auto auto;
+background-color: rgba(235, 235, 235, 0.8);
+text-align: center;
+backdrop-filter: blur(6px); 
+}
+
+.background-btn {
+display: flex;
+justify-content: center; 
+align-items: center; 
+border-radius: 15px;
+opacity: 0.8;
+text-align: center;
+height: 2rem;
+width: 15rem;
+margin: 6% auto auto auto;
+background-color:  rgba(235, 235, 235, 0.8); 
+backdrop-filter: blur(6px); 
+    cursor: pointer; 
+ 
+}
+
+
+#alertPopup {
+    -webkit-user-select: none;
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+    margin-top: 16vh;
+    display: block; 
+    opacity: 0; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(235, 235, 235, 0.9); 
+    padding: 10px;
+    border-radius: 12px;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none; 
+    z-index: 10;
+
+}
+
+.fade {
+    transition: opacity 0.2s; 
+
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.removeBtn {
+    position: absolute;
+    top: 5px; 
+    right: 5px; 
+    opacity: 0.6;
+    -webkit-user-select: none;
+    -moz-user-select: none;     
+    -ms-user-select: none; 
+    user-select: none;
+  }
+
+textarea#notes {    
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #D6DBD5;
+    opacity: 0.8;
+    user-select: none; 
+    outline: none;
+    font-size: 14px;
+    resize: none;
+    padding: 10px;
+    height: 30vh;
+  }
+  
+.weather-today, .weather-tomorrow, .weather-toovermorrow {
+margin-left: 0px;
+ }
+
+.weather-today, .weather-tomorrow, .weather-toovermorrow  p{
+margin-top:-0px;
+margin-left: -0px;
+font-size: 16px;
+  }          
+
+#icon, #icon2, #icon3 {
+margin-left: 5.5rem;
+}
+
+.favicon {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+    height: 1.5rem;
+    flex-shrink: 0; 
+}
+
+.link-title {
+    margin-top: -10px;
+}
+#current-time strong {
+    font-weight: bold;
+}
+
+.reload {
+    margin-right: 10px;
+}
+
+.brott {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.event-item {
+    font-size: 12px;
+    background-color: #D6DBD5;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.grid-item3 {
+    position: relative;
+    max-height: 23rem;
+    overflow: hidden; 
+    border-radius: 15px; 
+}
+
+.grid-item3 .hover-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('gw5.gif');
+    background-size: cover;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 1s, transform 3s;
+    overflow: hidden; 
+}
+
+.grid-item3:hover .hover-image {
+    opacity: 0.5;
+    transform: scale(1.5) translateX(-15%); 
+}
+
+.hover-image {
+        pointer-events: none;
+
+}
+
+#linkPopup {
+    padding-top: 2rem;
+    position: absolute;
+    border-radius: 15px;
+    background-color: rgba(235, 235, 235, 0.95); 
+    width: 20rem;
+    height: 13rem;
+    margin: auto auto auto auto;
+    z-index: 20;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}   
+
+
+.overlay {
+    position: fixed;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 10; 
+    pointer-events: none
+}
+
+
+#linkPopup, .overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    
+}
+
+#linkPopup.visible, .overlay.visible {
+    visibility: visible; 
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0s; 
+    pointer-events: auto;
+
+}
+
+.kryss {
+    position: absolute; 
+    top: 10px;
+    right: 12px;
+    color: rgba(85, 85, 85, 0.589);
+    width: 16px;
+    height: 10px;
+    cursor: pointer;
+
+
+}
+
+.link-popup.active + .grid-item1 {
+    filter: blur(5px);
+}
+
+.link-popup input {
+    width: 80%;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+}
+
+.link-popup button {
+    width: 50%;
+    margin-top: 20px;
+}
+
+
+#popupTitleInput, #popupUrlInput  {
+    margin-top: 1rem;
+    height: 2rem;
+    border-radius: 5px;
+    max-width: 15rem;
+    padding-left: 5px;  
+    background-color:#FFFFFF;
+
+}
+
+#submitLink {
+    margin-top: 0.5rem;
+    background-color: rgb(255, 255, 255); 
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 7rem;
+    color: #6D6D6F;
+}
+
+.link0 {
+    display: none;
+}
+
+.blur-background {
+    filter: blur(5px);
+    display: block;
+    z-index: 0;
+}
+
