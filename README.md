@@ -22,10 +22,14 @@ Har använt mig av weatherAPI, worldtimeAPI och polisens öppna API för händel
 Så här lägger du in dina egna nycklar så att allt funkar:
 
 WeatherAPI:
+
 const weatherKey = "DIN NYCKEL HÄR!";
 
 Unsplash API:
+
 const accessKey = 'DIN NYCKEL HÄR!'
+
+
 
 Upplevs absolut bäst med Chrome på windows 11.
 
